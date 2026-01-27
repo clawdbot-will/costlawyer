@@ -5,7 +5,7 @@ import { Award, ExternalLink, Search, Calculator } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="pt-32 pb-24 md:pt-40 md:pb-32 relative overflow-hidden min-h-[90vh] flex items-center">
+    <section className="pt-32 pb-32 md:pt-40 md:pb-40 relative overflow-hidden min-h-[90vh] flex items-center">
       {/* Background */}
       <div className="absolute inset-0 bg-white z-0"></div>
       
@@ -93,6 +93,7 @@ const HeroSection = () => {
                 alt="Regulated by the Costs Lawyer Standards Board 2026" 
                 className="h-16 w-auto"
               />
+              <p className="text-sm text-gray-400">Regulated by the<br/>Costs Lawyer Standards Board</p>
             </motion.div>
 
             {/* Mobile Products - shown only on smaller screens */}
