@@ -1,0 +1,423 @@
+import { useEffect, useState } from "react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
+import { useLocation } from "wouter";
+import type { Case } from "@shared/schema";
+import { motion } from "framer-motion";
+import { fadeInVariants, containerVariants, itemVariants } from "@/lib/animations";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Separator } from "@/components/ui/separator";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { 
+  PlusCircle, Edit, Trash2, Send as SendIcon, 
+  AlertTriangle, LayoutDashboard, FileText, 
+  Newspaper, LogOut, Tag as TagIcon, Activity as ActivityIcon, 
+  Settings, Users
+} from "lucide-react";
+
+export default function AdminDashboard() {
+  const [location, setLocation] = useLocation();
+  const { toast } = useToast();
+  const queryClient = useQueryClient();
+  const [currentUser, setCurrentUser] = useState<any>(null);
+
+  // Check authentication
+  useEffect(() => {
+    const checkAuth = async () => {
+      try {
+        // Try to get auth token from localStorage
+        const localToken = localStorage.getItem('auth_token');
+        
+        const headers: HeadersInit = {};
+        if (localToken) {
+          headers['Authorization'] = `Bearer ${localToken}`;
+        }
+        
+        const response = await fetch("/api/auth/me", {
+          method: "GET",
+          credentials: "include",
+          headers
+        });
+        
+        if (!response.ok) {
+          throw new Error("Authentication failed");
+        }
+        
+        const user = await response.json();
+        
+        if (user) {
+          setCurrentUser(user);
+        } else {
+          // Clear any invalid tokens
+          localStorage.removeItem('auth_token');
+          setLocation("/admin/login");
+        }
+      } catch (error) {
+        console.error("Authentication error:", error);
+        // Clear any invalid tokens
+        localStorage.removeItem('auth_token');
+        setLocation("/admin/login");
+      }
+    };
+    
+    checkAuth();
+  }, [setLocation]);
+
+  // Get cases query
+  const { data: cases, isLoading: isLoadingCases } = useQuery({
+    queryKey: ["/api/cases"],
+    queryFn: () => apiRequest<Case[]>({ path: "/api/cases" }),
+  });
+
+  // Logout function
+  const handleLogout = async () => {
+    try {
+      const response = await fetch("/api/auth/logout", {
+        method: "POST",
+        credentials: "include"
+      });
+      
+      if (!response.ok) {
+        throw new Error("Logout failed");
+      }
+      
+      await response.json();
+      
+      // Clear localStorage token
+      localStorage.removeItem('auth_token');
+      
+      // Clear any user state
+      setCurrentUser(null);
+      
+      // Redirect to login
+      window.location.href = "/admin/login";
+    } catch (error) {
+      console.error("Logout error:", error);
+      toast({
+        title: "Logout failed",
+        description: "An error occurred while logging out",
+        variant: "destructive",
+      });
+    }
+  };
+
+  // Delete case function
+  const handleDeleteCase = async (id: number) => {
+    if (!confirm("Are you sure you want to delete this case?")) return;
+    
+    try {
+      await apiRequest<void>({
+        method: "DELETE",
+        path: `/api/cases/${id}`
+      });
+      
+      queryClient.invalidateQueries({ queryKey: ["/api/cases"] });
+      
+      toast({
+        title: "Case deleted",
+        description: "The case has been successfully deleted",
+      });
+    } catch (error) {
+      toast({
+        title: "Delete failed",
+        description: "An error occurred while deleting the case",
+        variant: "destructive",
+      });
+    }
+  };
+
+  // Publish to Discord function
+  const handlePublishToDiscord = async (id: number) => {
+    try {
+      await apiRequest<{ message: string }>({
+        method: "POST",
+        path: `/api/cases/${id}/publish-to-discord`
+      });
+      
+      queryClient.invalidateQueries({ queryKey: ["/api/cases"] });
+      
+      toast({
+        title: "Published to Discord",
+        description: "The case has been successfully published to Discord",
+      });
+    } catch (error) {
+      toast({
+        title: "Publish failed",
+        description: "An error occurred while publishing to Discord",
+        variant: "destructive",
+      });
+    }
+  };
+
+  if (!currentUser) {
+    return <div className="container py-12">Loading...</div>;
+  }
+
+  return (
+    <motion.div 
+      className="container py-6 max-w-7xl mx-auto"
+      initial="hidden"
+      animate="visible"
+      variants={fadeInVariants}
+    >
+      <div className="flex justify-between items-center mb-8 border-b pb-4">
+        <div>
+          <h1 className="text-2xl font-bold tracking-tight">Admin Dashboard</h1>
+          <p className="text-muted-foreground text-sm mt-1">
+            Welcome back, {currentUser.username}
+          </p>
+        </div>
+        <Button variant="outline" size="sm" onClick={handleLogout}>
+          <LogOut className="mr-2 h-4 w-4" />
+          Logout
+        </Button>
+      </div>
+
+      <Tabs defaultValue="cases">
+        <TabsList className="mb-6 w-full border-b pb-0">
+          <TabsTrigger value="dashboard">
+            <LayoutDashboard className="mr-2 h-4 w-4" />
+            Dashboard
+          </TabsTrigger>
+          <TabsTrigger value="cases">
+            <FileText className="mr-2 h-4 w-4" />
+            Case Law
+          </TabsTrigger>
+          <TabsTrigger value="news">
+            <Newspaper className="mr-2 h-4 w-4" />
+            News
+          </TabsTrigger>
+        </TabsList>
+        
+        <TabsContent value="dashboard">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="border border-border/40 shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">Total Cases</CardTitle>
+                <FileText className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">{cases?.length || 0}</div>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {cases?.filter(c => c.publishedToDiscord).length || 0} published to Discord
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border/40 shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">Categories</CardTitle>
+                <TagIcon className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold">
+                  {Array.from(new Set(cases?.map(c => c.category) || [])).length}
+                </div>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Unique case categories
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-border/40 shadow-sm">
+              <CardHeader className="flex flex-row items-center justify-between pb-2">
+                <CardTitle className="text-sm font-medium">Recent Activity</CardTitle>
+                <ActivityIcon className="h-4 w-4 text-muted-foreground" />
+              </CardHeader>
+              <CardContent className="px-2">
+                <div className="space-y-2">
+                  {cases?.slice(0, 3).map(c => (
+                    <div key={c.id} className="flex items-center gap-2 p-2 rounded-md hover:bg-muted/50 text-sm">
+                      <div className="bg-primary/10 p-1.5 rounded-full">
+                        <FileText className="h-3.5 w-3.5 text-primary" />
+                      </div>
+                      <div className="truncate">{c.title}</div>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+            
+          <h3 className="font-medium mt-8 mb-4">Quick Actions</h3>
+          <div className="grid gap-4 md:grid-cols-3">
+            <Button 
+              variant="outline" 
+              className="justify-start h-auto py-4 px-4"
+              onClick={() => setLocation("/admin/cases/new")}
+            >
+              <div className="flex flex-col items-start gap-1">
+                <div className="flex items-center gap-2">
+                  <PlusCircle className="h-4 w-4 text-primary" />
+                  <span className="font-medium">Add New Case</span>
+                </div>
+                <p className="text-xs text-muted-foreground text-left">
+                  Create a new case entry
+                </p>
+              </div>
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              className="justify-start h-auto py-4 px-4"
+              disabled
+            >
+              <div className="flex flex-col items-start gap-1">
+                <div className="flex items-center gap-2">
+                  <Settings className="h-4 w-4 text-primary" />
+                  <span className="font-medium">Site Settings</span>
+                </div>
+                <p className="text-xs text-muted-foreground text-left">
+                  Manage website configuration
+                </p>
+              </div>
+            </Button>
+            
+            <Button 
+              variant="outline" 
+              className="justify-start h-auto py-4 px-4"
+              disabled
+            >
+              <div className="flex flex-col items-start gap-1">
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-primary" />
+                  <span className="font-medium">User Management</span>
+                </div>
+                <p className="text-xs text-muted-foreground text-left">
+                  Manage admin users
+                </p>
+              </div>
+            </Button>
+          </div>  
+        </TabsContent>
+        
+        <TabsContent value="cases">
+          <div className="flex justify-between items-center mb-6">
+            <h2 className="text-xl font-semibold">Case Law Management</h2>
+            <Button onClick={() => setLocation("/admin/cases/new")} size="sm">
+              <PlusCircle className="mr-2 h-4 w-4" />
+              Add New Case
+            </Button>
+          </div>
+          
+          <Card className="border border-border/40 shadow-sm">
+            <CardContent className="p-0">
+              {isLoadingCases ? (
+                <div className="flex justify-center items-center h-64">
+                  <p className="text-muted-foreground">Loading cases...</p>
+                </div>
+              ) : !cases || cases.length === 0 ? (
+                <div className="flex flex-col justify-center items-center h-64">
+                  <AlertTriangle className="h-8 w-8 text-muted-foreground mb-2" />
+                  <p className="text-muted-foreground">No cases found</p>
+                  <Button 
+                    variant="link" 
+                    onClick={() => setLocation("/admin/cases/new")}
+                    className="mt-2"
+                  >
+                    Add your first case
+                  </Button>
+                </div>
+              ) : (
+                <div className="overflow-hidden rounded-md">
+                  <Table>
+                    <TableHeader>
+                      <TableRow className="bg-muted/50">
+                        <TableHead className="w-[300px]">Title</TableHead>
+                        <TableHead className="w-[120px]">Category</TableHead>
+                        <TableHead className="w-[100px]">Date</TableHead>
+                        <TableHead className="w-[150px]">Author</TableHead>
+                        <TableHead className="w-[130px]">Discord Status</TableHead>
+                        <TableHead className="text-right w-[120px]">Actions</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {cases.map((caseItem) => (
+                        <TableRow
+                          key={caseItem.id}
+                          className="hover:bg-muted/50"
+                        >
+                          <TableCell className="font-medium">{caseItem.title}</TableCell>
+                          <TableCell>{caseItem.category}</TableCell>
+                          <TableCell>{caseItem.date}</TableCell>
+                          <TableCell>{caseItem.author}</TableCell>
+                          <TableCell>
+                            {caseItem.publishedToDiscord ? (
+                              <span className="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">
+                                Published
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">
+                                Not Published
+                              </span>
+                            )}
+                          </TableCell>
+                          <TableCell className="text-right">
+                            <div className="flex justify-end gap-1">
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8"
+                                onClick={() => setLocation(`/admin/cases/edit/${caseItem.id}`)}
+                                title="Edit"
+                              >
+                                <Edit className="h-4 w-4" />
+                              </Button>
+                              {!caseItem.publishedToDiscord && (
+                                <Button
+                                  variant="ghost"
+                                  size="icon"
+                                  className="h-8 w-8"
+                                  onClick={() => handlePublishToDiscord(caseItem.id)}
+                                  title="Publish to Discord"
+                                >
+                                  <SendIcon className="h-4 w-4" />
+                                </Button>
+                              )}
+                              <Button
+                                variant="ghost"
+                                size="icon"
+                                className="h-8 w-8 text-red-500 hover:text-red-600 hover:bg-red-50"
+                                onClick={() => handleDeleteCase(caseItem.id)}
+                                title="Delete"
+                              >
+                                <Trash2 className="h-4 w-4" />
+                              </Button>
+                            </div>
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </div>
+              )}
+            </CardContent>
+          </Card>
+        </TabsContent>
+        
+        <TabsContent value="news">
+          <div className="flex justify-center items-center h-64">
+            <p>News management will be implemented in a future update</p>
+          </div>
+        </TabsContent>
+      </Tabs>
+    </motion.div>
+  );
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Smith v Jones [2024] EWHC 123 (Costs)",
+    "summary": "This case involves a dispute over costs recovery in a professional negligence claim, focusing on the application of proportionality tests to detailed assessment.",
+    "content": "# Smith v Jones [2024] EWHC 123 (Costs)\n\n## Summary\nThis case involves a dispute over costs recovery in a professional negligence claim.\n\n## Participants\n- John Smith (Claimant)\n- Alice Jones (Defendant)\n- Johnson & Partners LLP (Solicitors for the Claimant)\n- Master Brown (Costs Judge)\n\n## Key Issues\n- Whether the proportionality test applies to individual items or the total bill\n- The relevance of complexity in pre-trial settlements\n- Application of the new proportionality test under CPR\n\n## Highlights\n> \"The court held that the proportionality test must be applied to the total costs being assessed, and not separately to each item of cost.\"\n\n> \"Where a claim settles before trial, the complexity of the matter is still relevant to the assessment of proportionality.\"\n\n## Outcome\nThe court allowed 70% of the claimed costs, finding that while some elements appeared disproportionate in isolation, the overall bill was proportionate given the complexity and importance of the matter.",
+    "category": "Detailed Assessment",
+    "date": "15 February 2024",
+    "author": "William Mackenzie",
+    "tags": ["proportionality", "professional negligence", "costs assessment", "CPR"],
+    "slug": "smith-v-jones-2024-ewhc-123-costs",
+    "publishedToDiscord": false
+  },
+  {
+    "title": "Brown v NHS Trust [2024] EWHC 234 (QB)",
+    "summary": "A landmark decision on costs budgeting in clinical negligence claims, establishing new guidelines for the application of Precedent H.",
+    "content": "# Brown v NHS Trust [2024] EWHC 234 (QB)\n\n## Summary\nThis judgment sets new precedent for costs budgeting in clinical negligence claims.\n\n## Participants\n- Margaret Brown (Claimant)\n- Central NHS Trust (Defendant)\n- Justice Williams\n- Ms. Sarah Thompson QC (for the Claimant)\n- Mr. Robert Jackson QC (for the Defendant)\n\n## Background\nThe claimant suffered serious injuries during surgery and brought a claim against the NHS Trust. At the costs management conference, there was significant dispute about the appropriate level of costs for expert evidence and trial preparation.\n\n## Highlights\n> \"The purpose of costs budgeting is not to reduce costs to their minimum possible level, but to ensure they are reasonable, proportionate and necessary.\"\n\n> \"In complex clinical negligence matters where causation is in dispute, a more generous approach to expert fees may be justified.\"\n\n## Key Principles\n1. Proportionality must be judged against the specific circumstances of the case\n2. The complexity of expert evidence may justify higher costs\n3. Efficiency in litigation process should be considered\n\n## Outcome\nThe court approved a costs budget with modifications, allowing most of the expert fees but reducing the trial preparation contingency by 25%.",
+    "category": "Costs Budgeting",
+    "date": "22 February 2024",
+    "author": "William Mackenzie",
+    "tags": ["clinical negligence", "costs budgeting", "Precedent H", "proportionality", "expert evidence"],
+    "slug": "brown-v-nhs-trust-2024-ewhc-234-qb",
+    "publishedToDiscord": false
+  },
+  {
+    "title": "Wilson & Co v Thompson [2024] EWHC 345 (Costs)",
+    "summary": "A solicitor-client dispute regarding a conditional fee agreement and success fees in a commercial litigation case.",
+    "content": "# Wilson & Co v Thompson [2024] EWHC 345 (Costs)\n\n## Summary\nThis case addresses the enforceability of a conditional fee agreement (CFA) and the reasonableness of success fees in commercial litigation.\n\n## Participants\n- Wilson & Co Solicitors (Claimant)\n- James Thompson (Defendant/Former Client)\n- Deputy Costs Judge Mitchell\n\n## Key Issues\n- Whether the CFA was compliant with regulations\n- The adequacy of risk assessment for the success fee\n- Whether information provided to the client was sufficient\n\n## Legal Background\nThe Defendant had instructed the Claimant in commercial litigation under a CFA with a 100% success fee. After successful resolution, the Defendant challenged the enforceability of the CFA and the reasonableness of the success fee.\n\n## Highlights\n> \"A solicitor must provide sufficient information to enable the client to make an informed decision about the funding arrangement. This requires more than mechanical recitation of terms.\"\n\n> \"The level of success fee must be justified by a proper assessment of risk at the time the CFA was entered into, not by reference to hindsight.\"\n\n## Outcome\nThe court found the CFA to be enforceable but reduced the success fee from 100% to 50%, finding that the initial risk assessment had not justified the higher percentage.",
+    "category": "Conditional Fee Agreement",
+    "date": "5 March 2024",
+    "author": "William Mackenzie",
+    "tags": ["CFA", "success fee", "solicitor-client costs", "risk assessment", "commercial litigation"],
+    "slug": "wilson-co-v-thompson-2024-ewhc-345-costs",
+    "publishedToDiscord": false
+  }
+]

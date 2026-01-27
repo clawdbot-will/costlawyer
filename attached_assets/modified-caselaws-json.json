@@ -1,0 +1,424 @@
+[
+  {
+    "id": "6706d0bc54a9acac399a117c",
+    "dataId": "84d55501-866f-11ef-85b0-6b5fd2481541",
+    "title": "Anthony v Collins [2020] EWHC B15 (Costs)",
+    "summary": "This case, Anthony v Collins, is about a detailed assessment of the costs claimed by the Claimant, Danny John Anthony, related to a contested will. The dispute centers on whether the costs claimed by the Claimant are in breach of the indemnity principle and whether sanctions should be imposed due to the manner in which the Claimant's case was presented. The Claimant, a self-employed taxi driver, challenged the will of his late father, believing it was unfavorable to him. The Defendant, Karen Collins, was his father's long-term partner who claimed a beneficial interest in the property. The case involved multiple conditional fee agreements, and the court had to determine whether these agreements were enforceable, as they were prolix and confusing, leading to various legal issues during the proceedings. Ultimately, the court had to assess the appropriateness of the legal costs, the enforceability of the agreements, and whether any misconduct had occurred during the claims.",
+    "participants": [
+      "Danny John Anthony (Claimant)",
+      "Karen Collins (Defendant)",
+      "Contested Wills and Probate Lawyers Limited (Solicitors for the Claimant)",
+      "Mr Terence Johansson (principal of the solicitors)",
+      "Ms Larissa Wilson (solicitor responsible for dealing with the Claimant)",
+      "Mr Brian Varney (costs consultant)",
+      "Mr Ian Simpson",
+      "Mr Smith",
+      "Mr Hogan",
+      "Judge Cotter QC",
+      "Rix LJ",
+      "Leggatt J"
+    ],
+    "date": "2020-01-27",
+    "tags": [
+      "Conditional Fee Agreement",
+      "Indemnity Principle",
+      "Will Contesting"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B15.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d26e54a9acac399a1186",
+    "dataId": "879c47c1-8670-11ef-85b0-6b5fd2481541",
+    "title": "Deutsche Bank AG and Sebastian Holdings Inc & Alexander Vik [2020] EWHC B16 (Costs)",
+    "summary": "The judgment primarily addressed three preliminary issues concerning the Claimant's bill of costs: the rate and period of interest on costs, the scope of the costs order, and the appropriate exchange rate for sums claimed in foreign currency. The court upheld the Judgments Act rate of 8% interest on costs, subject to certain deductions due to delays. The judgment also determined that the earlier interlocutory costs orders did not fall within the main order for costs, thus Alexander Vik was not liable for these. Regarding the exchange rate, it was held that disbursements paid in USD should be converted based on the rate at the time of payment, not at current rates.",
+    "participants": [
+      "Deutsche Bank AG",
+      "Sebastian Holdings Inc",
+      "Alexander Vik",
+      "Master Gordon-Saker",
+      "Mr Nicholas Bacon QC",
+      "Mr Benjamin Williams QC",
+      "Mr Rupert Cohen",
+      "Mr Foxton QC",
+      "Cooke J.",
+      "Leggatt J.",
+      "Walker J.",
+      "Burton J.",
+      "The Supreme Court",
+      "The Court of Appeal",
+      "The European Court of Human Rights",
+      "Warren J.",
+      "Deloitte LLP"
+    ],
+    "date": "2020-03-05",
+    "tags": [
+      "Indemnity basis",
+      "Interest on costs",
+      "Litigation privilage"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B16.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d2d954a9acac399a118c",
+    "dataId": "c76ddda1-8670-11ef-85b0-6b5fd2481541",
+    "title": "Fuseon Ltd, R (On the Application Of) v Shinners [2020] EWHC B18 (Costs)",
+    "summary": "This case involved an appeal by Fuseon Limited regarding the detailed assessment of costs related to a private prosecution. The main costs issues revolved around the reasonableness of the costs claimed for prosecuting Timothy Shinners for fraud and theft. The initial assessment significantly reduced Fuseon's costs, citing disproportionate claims and the use of a London-based law firm rather than a local one. On judicial review, Lane J. found errors in the decision to use the Crown Prosecution Service (CPS) as a comparator and concluded that the hourly rates should have been based on the London rates charged by the firm. The Singh principle was also applied incorrectly in reducing the costs, leading to the allowance of the appeal regarding hourly rates and the Singh adjustment.",
+    "participants": [
+      "Fuseon Ltd",
+      "Shinners",
+      "Mr FitzGerald-Morris",
+      "Master Rowley",
+      "Lane J.",
+      "Master Gordon-Saker",
+      "The Lord Chancellor",
+      "Mr Laycock",
+      "EMM law firm"
+    ],
+    "date": "2020-04-09",
+    "tags": [
+      "Legal",
+      "High Court",
+      "Prosecution Costs"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B18.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d33c54a9acac399a1191",
+    "dataId": "02ca3f11-8671-11ef-85b0-6b5fd2481541",
+    "title": "James Nosworthy (as representative of the estate of Barbara Nosworthy (deceased)) v Royal Bournemouth & Christchurch Hospitals NHS Foundation Trust [2020] EWHC B19 (Costs)",
+    "summary": "This case involved an application for interest on costs relating to a disbursement funded by a loan at 15% interest. The primary issue was whether the claimant was entitled to pre-judgment interest on the disbursement, which was incurred for an expert medical report. The claimant argued that the costs could not have been pursued without the loan, but the court ultimately refused the application, citing that it would introduce unnecessary complexity to the cost assessment process, especially outside high-value commercial cases. The court emphasized that interest on disbursements should not be awarded as a matter of general practice and that receiving judgment rate interest sufficiently compensates for the cost of funding.",
+    "participants": [
+      "James Nosworthy",
+      "Royal Bournemouth & Christchurch Hospitals NHS Foundation Trust",
+      "Master Brown",
+      "Mr. George McDonald",
+      "Mr Ken Corness",
+      "Master Rogers",
+      "the Costs Judge",
+      "Leggatt J",
+      "Dingemans J",
+      "Nicol J",
+      "Lord Ackner",
+      "Neuberger MR",
+      "Steele J",
+      "Purchas LJ",
+      "Parliament"
+    ],
+    "date": "2020-04-30",
+    "tags": [
+      "Interest on costs",
+      "Disbursement funding",
+      "Interest",
+      "Pre-judgment interest"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B19.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d39f54a9acac399a1193",
+    "dataId": "3ddced51-8671-11ef-85b0-6b5fd2481541",
+    "title": "Shulman v Kolomoisky & Anor [2020] EWHC B29 (Costs)",
+    "summary": "This judgment dealt with determining the reasonable hourly rates to be allowed for the second defendant's legal representation. The second defendant instructed Skadden, Arps, Slate, Meagher & Flom LLP (\"Skadden\"), and there was a dispute regarding whether the rates charged were reasonable given their location in Canary Wharf, technically falling under the \"Outer London\" band. The court ultimately allowed lower hourly rates compared to those claimed by Skadden, considering factors like the absence of truly novel legal issues, the typical nature of the litigation, and the limited complexity compared to the value of the claim. The court emphasized that even in high-value cases, the hourly rates must be justifiable based on the complexity and uniqueness of the matter, and that rates considerably above the Guideline Rates could not be justified in this instance.",
+    "participants": [
+      "Vadim Maratovich Shulman",
+      "Igor Valeryevich Kolomoisky",
+      "Gennadiy Borisovich Bogolyubov",
+      "Skadden, Arps, Slate, Meagher & Flom LLP",
+      "MASTER ROWLEY",
+      "Mr. James",
+      "Mr. Mallalieu",
+      "Clifford Chance",
+      "Barling J",
+      "Ms. Fu",
+      "David Kavanagh QC",
+      "David Edwards",
+      "Alex van der Zwaan",
+      "Judy Fu",
+      "Emma Farrow",
+      "Alexander J. Halms",
+      "Roman Vikis",
+      "Mr Bainsfair",
+      "Hogan Lovells"
+    ],
+    "date": "2020-06-24",
+    "tags": [
+      "City Rates",
+      "Hourly Rates",
+      "Proportionality"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B29.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d3ff54a9acac399a1197",
+    "dataId": "76ef5ec1-8671-11ef-85b0-6b5fd2481541",
+    "title": "Hassan Khan & Co & Anor v Al-Rawas & Anor [2020] EWHC B21 (Costs)",
+    "summary": "This case revolved around the detailed assessment of costs after the Claimants served a bill totaling £305,275.64 for unpaid bills and orders. Key issues included the proper method for obtaining a Default Costs Certificate and whether the Defendants could actively participate in the detailed assessment without paying a portion of the costs. The court found that the Defendants had repeatedly disregarded court orders, providing incomplete and untruthful evidence about their ability to pay. As a result, an order similar to a Days Healthcare order was issued, debarring the Defendants from further representation in the detailed assessment unless they paid an interim costs certificate of £75,000. The Points of Dispute raised by the Defendants were still to be considered, but their participation in the proceedings was restricted due to their failure to comply with previous orders.",
+    "participants": [
+      "Hassan Khan & Co",
+      "The Khan Partnership LLP",
+      "Iman Said Abdul Al-Rawas",
+      "Thamer Al-Shanfari",
+      "Dan Stacey",
+      "Lawrence Power",
+      "Master Leonard",
+      "Mrs Justice Cheema-Grubb",
+      "Deputy Master Stevens",
+      "Mr Martin Griffiths QC",
+      "Ms Binkley",
+      "Morris J",
+      "National Bank of Oman",
+      "Bank of Beirut",
+      "The Oman Arab Bank",
+      "Independent Auditor",
+      "Issa Tamer Al Shanfari"
+    ],
+    "date": "2020-05-13",
+    "tags": [
+      "Default costs certificate",
+      "Interim costs certificate",
+      "Judgment Enforcement"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B21.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d44b54a9acac399a1199",
+    "dataId": "a3e7d241-8671-11ef-85b0-6b5fd2481541",
+    "title": "Narayanasamy v Karim & Anor [2020] EWHC B22 (Costs)",
+    "summary": "This case involved a detailed assessment application by the Claimant, who sought payment under a Conditional Fee Agreement (CFA) for legal services provided to the Defendants. The primary issue revolved around whether the Claimant's right to apply for assessment of his costs was statute-barred. The court found that the Claimant ceased practicing as a sole practitioner and converted his practice into a limited company (Dotcom Solicitors Limited) on 1 April 2013, effectively terminating the original retainer. There was no evidence of an agency relationship between the Claimant and Dotcom that would allow him to continue claiming under the original retainer. Consequently, the six-year limitation period for bringing an action to recover payment had expired by the time the Claimant rendered a new bill in his own name in 2019, making the claim statute-barred.",
+    "participants": [
+      "Ram Narayanasamy",
+      "Mr Rahman Karim",
+      "Ms Shanara Begum",
+      "Mr Gulam Khan",
+      "Dotcom Solicitors Limited"
+    ],
+    "date": "2019-07-09",
+    "tags": [
+      "CFA",
+      "Retainer Termination",
+      "Solicitors Act",
+      "Statute barred"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B22.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d49254a9acac399a119b",
+    "dataId": "ce46fd41-8671-11ef-85b0-6b5fd2481541",
+    "title": "Utting v City College Norwich [2020] EWHC B20 (Costs)",
+    "summary": "This case dealt with the issue of whether an \"underspend\" in budgeted costs constitutes a \"good reason\" to depart from a costs budget under CPR 3.18. The Claimant argued against reductions based on underspending, while the Defendant contended that any underspend warranted detailed assessment of those costs. Master Brown concluded that an underspend, by itself, is not a \"good reason\" to depart from the budget, siding with District Judge Lumb's reasoning in the case of Chapman v Norfolk and Norwich University Hospital NHS Foundation Trust. The judgment emphasized the need for a more specific and substantial point to justify a departure from budgeted costs, rather than simply failing to exhaust the budget. The ruling supports the integrity of costs budgeting by discouraging unnecessary detailed assessments, thereby maintaining the efficiency of the budgeting process.",
+    "participants": [
+      "Sophie Utting",
+      "City College Norwich",
+      "Master Brown",
+      "Mr. Bardoe",
+      "Mr. Thornsby",
+      "District Judge Lumb",
+      "Davis LJ",
+      "Judge Dight",
+      "Norfolk and Norwich University Hospital NHS Foundation Trust"
+    ],
+    "date": "2020-05-22",
+    "tags": [
+      "CPR 3.18",
+      "Cost Budgeting",
+      "Good Reason",
+      "Underspend"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B20.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d58354a9acac399a119f",
+    "dataId": "5e0f27e1-8672-11ef-85b0-6b5fd2481541",
+    "title": "Iwuanyawu v Ratcliffes Solicitors [2020] EWHC B25 (Costs)",
+    "summary": "Mrs. Iwuanyawu, the claimant, is seeking a detailed assessment of 13 out of 14 bills delivered to her by Ratcliffes Solicitors, the defendants, regarding her divorce proceedings. The defendants argued that the court lacked jurisdiction for some bills due to the time of payment. The court concluded that the bills were not interim statute bills but part of a running account. The court expressed concern over the total amount of the bills, which exceeded the initial estimate, and the lack of information about the client's right to seek court assessment of the bills.",
+    "participants": [
+      "Mrs. Iwuanyawu (Claimant)",
+      "Ratcliffes Solicitors (Defendants)",
+      "Master Gordon-Saker (Judge)",
+      "Mr Maqsood (Representative for the Claimant)",
+      "Mr Davis (Representative for the Defendants)",
+      "Walker J",
+      "Mr Mallalieu",
+      "Dr Vlamaki"
+    ],
+    "date": "2020-06-12",
+    "tags": [
+      "Legal Case",
+      "Divorce Proceedings",
+      "Detailed Bill Assessment",
+      "Solicitors Act 1974",
+      "Court Jurisdiction"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B25.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d5f654a9acac399a11a1",
+    "dataId": "a2da6471-8672-11ef-85b0-6b5fd2481541",
+    "title": "Newman v Gordon Dadds LLP [2020] EWHC B23 (Costs)",
+    "summary": "This legal case involves a billing dispute between Adam Newman (the claimant) and Gordon Dadds LLP (the defendant). The claimant argues that the defendant's recoverable fees should be limited to an initial estimate of £10,000. The court made orders for the detailed assessment of six bills rendered by the defendant and for the issue of estimates and their effect on the claimant's bills to be heard as a preliminary issue. The court also examines the professional obligations of solicitors to provide adequate cost estimates to clients.",
+    "participants": [
+      "Adam Newman",
+      "Gordon Dadds LLP",
+      "Fahri LLP",
+      "Mr Nicholas Yapp",
+      "Nick Goldstone",
+      "Master Leonard",
+      "Mrs. Newman",
+      "Shakespeare Martineau",
+      "Mr Dunne",
+      "Financial Conduct Authority",
+      "Mr. Churchill",
+      "Walker Morris",
+      "JFL",
+      "Pripay Limited"
+    ],
+    "date": "2020-03-13",
+    "tags": [
+      "Legal Case",
+      "Billing Dispute",
+      "Solicitor's Professional Obligations"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B23.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d63f54a9acac399a11a3",
+    "dataId": "ce2ffd61-8672-11ef-85b0-6b5fd2481541",
+    "title": "Marbrow v Sharpes Garden Services Ltd [2020] EWHC B26 (Costs)",
+    "summary": "This case involved a detailed assessment of the Claimant's costs following a successful personal injury claim against his employer, Sharpes Garden Services Limited. Senior Costs Judge Gordon-Saker addressed three key issues: (1) Whether the caps on recoverable costs in Practice Direction 3E of the Civil Procedure Rules exclude VAT. The judge concluded that the caps do exclude VAT because the costs budget figures used in the calculation do not include VAT. (2) The recoverability of interest paid on a disbursement funding loan. The judge determined that interest paid on a loan for funding disbursements could not be recovered as costs, based on the Court of Appeal's decision in Hunt v RM Douglas (Roofing) Ltd [1987]. However, the court could order interest on costs from a date before judgment under CPR 44.2(6)(g). (3) The Defendant's argument that the Claimant's entitlement to interest should start from three months after the order for costs was rejected. The judge found no particular circumstances justifying a departure from the default rule that interest runs from the date of judgment.",
+    "participants": [
+      "Thomas Joseph Marbrow",
+      "Sharpes Garden Services Limited",
+      "Senior Costs Judge Gordon-Saker",
+      "Barratts Solicitors",
+      "Gibbs Wyatt Stone",
+      "Miss Michelle Walton",
+      "Mr Simon Gibbs",
+      "Court of Appeal",
+      "Hunt v RM Douglas (Roofing) Ltd",
+      "F&C Alternative Investments v Barthelemy",
+      "Secretary of State for Energy v Jones",
+      "Involnert Management Inc v Aprilgrange Limited & Ors",
+      "Simcoe v Jacuzzi UK Group PLC",
+      "Parliament"
+    ],
+    "date": "2020-07-10",
+    "tags": [
+      "Costs budget cap",
+      "Disbursement funding loan",
+      "Pre-judgment interest"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B26.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d87554a9acac399a11a5",
+    "dataId": "1f4468c1-8674-11ef-85b0-6b5fd2481541",
+    "title": "PLK & Ors (Court of Protection : Costs) [2020] EWHC B28 (Costs)",
+    "summary": "This case involved a common point of principle regarding the assessment of hourly rates claimed by Deputies in the Court of Protection (COP). Master Whalan reviewed the approach taken by Costs Officers and Costs Judges when assessing COP costs and whether the Guideline Hourly Rates (GHR) of 2010 were still appropriate. The Applicants argued that COP work should be assessed using a more flexible approach, treating the GHR as a starting point rather than a fixed ceiling. Master Whalan acknowledged that COP work can involve substantial responsibility and complexity, and agreed that the GHR should be subject to some form of uplift to reflect inflation and changing commercial conditions. He directed that, moving forward, hourly rates up to 120% of the 2010 GHR should be considered prima facie reasonable for COP work, allowing for greater flexibility in assessments.",
+    "participants": [
+      "Paul Nigel Tate",
+      "Natasha Molloy of Freeths LLP",
+      "Nottingham",
+      "Clarion",
+      "the Civil Justice Council",
+      "Master O'Hare",
+      "Master Haworth",
+      "Mr N. Bacon",
+      "Mr A. Post",
+      "Mr Justice Stewart QC",
+      "Costs Officers",
+      "Costs Judges",
+      "Mr Wilcock (counsel for the applicants)",
+      "Mr Russell Caller",
+      "Mr Alexander Wright",
+      "Ms Molloy",
+      "Ms Stephanie Kaye",
+      "Ms Lynne Bradey",
+      "Ms Natasha Molloy",
+      "Ms Stacey Bryant",
+      "Mr Simon Hardy",
+      "Costs Provider",
+      "The Professional Deputies Forum (PDF)",
+      "Gillhams Solicitors LLP",
+      "Wrigleys Solicitors LLP",
+      "Freeths LLP",
+      "Boyes Turner LLP",
+      "Enable Law",
+      "Kingsley Napley LLP"
+    ],
+    "date": "2020-09-30",
+    "tags": [
+      "Court of Protection",
+      "Guideline Hourly Rates",
+      "Deputy Costs"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B28.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "6706d8e254a9acac399a11a7",
+    "dataId": "609599c1-8674-11ef-85b0-6b5fd2481541",
+    "title": "Masten v London Britannia Hotel Ltd [2020] EWHC B31 (Costs)",
+    "summary": "This case involved an application by the Defendant, London Britannia Hotel Ltd, to set aside a Default Costs Certificate (DCC) issued in favor of the Claimant, Sharifah Masten. The DCC was issued because the Defendant failed to serve points of dispute within the required timeframe after the settlement of a personal injury claim. The primary issues revolved around whether the application to set aside the DCC was made promptly and whether there was good reason for the detailed assessment to continue. Master Leonard concluded that the Defendant's default was serious and significant, and there was no good reason for it. Although the Defendant eventually filed an application to set aside the DCC, the lengthy delays, lack of urgency in remedying the default, and the prejudice caused to the Claimant led the court to refuse the application. The judgment emphasized the importance of adhering to procedural rules and timelines to ensure the efficient administration of justice.",
+    "participants": [
+      "Mr. Sharifah Masten",
+      "London Britannia Hotel Ltd",
+      "Master Leonard",
+      "Margaret McDonald",
+      "Stephen Innes",
+      "Mr. Philip Gaskell",
+      "QM Legal Costs Solutions Ltd",
+      "Mr. Gaskell",
+      "Mr. Oldale",
+      "Mr Innes",
+      "Ms McDonald",
+      "Master Thornett"
+    ],
+    "date": "2020-12-15",
+    "tags": [
+      "Default Costs Certificate (DCC)",
+      "Points of Dispute",
+      "Relief from Sanctions"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2020/B31.html",
+    "createdOn": "2024-10-09"
+  },
+  {
+    "id": "670782a6f69c3609c4bc8326",
+    "dataId": "9071d861-86d9-11ef-b561-5769d79f4df6",
+    "title": "Best v Luton & Dunstable Hospital NHS Foundation Trust [2021] EWHC B2 (Costs)",
+    "summary": "This case involved the issue of whether the Claimant could rely on a Part 36 offer in relation to the costs of detailed assessment proceedings. The detailed assessment of the Claimant's costs in a clinical negligence claim had been settled, but after the summary assessment hearing concluded, the Claimant sought to raise a Part 36 offer related to the assessment costs. Costs Judge Leonard allowed the issue to be raised post-hearing, noting that the hearing had not truly ended as the point was raised within the originally allocated time. However, the judge ultimately refused the Claimant's argument that the costs of the detailed assessment could be treated as an \"independent claim\" under CPR 47.20(7). The court held that while detailed assessment proceedings are treated as independent for the purpose of applying Part 36, the costs of those proceedings themselves do not constitute an independent issue that could trigger a Part 36 award. This decision was partly based on concerns about potential \"parasitic\" cycles of costs assessments if Part 36 were applicable in this manner, which would be contrary to the overriding objective of proportionality and fairness.",
+    "participants": [
+      "Natalie Best (Administratrix Of the Estate of Phyllis Stuck Deceased)",
+      "Luton & Dunstable Hospital NHS Foundation Trust",
+      "Margaret McDonald (counsel for the Claimant)",
+      "Eric Clegg (representative for the Defendant)",
+      "Mr Stott (Defendant's representative at the hearing)",
+      "Claimant",
+      "Defendant",
+      "Ms McDonald (Claimant's lawyer)",
+      "Mr Clegg (Defendant's lawyer)",
+      "Mr Justice Birss",
+      "Supreme Court",
+      "Rix LJ",
+      "Lewison LJ"
+    ],
+    "date": "2021-01-29",
+    "tags": [
+      "Clinical Negligence",
+      "Part 36 Offer",
+      "Cost of Assessment"
+    ],
+    "link": "https://www.bailii.org/ew/cases/EWHC/Costs/2021/B2.html",
+    "createdOn": "2024-10-10"
+  }
+]
