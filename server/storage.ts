@@ -11,8 +11,8 @@ import {
 import { caseData } from "./data/caseLaw";
 import { saveCases, loadCases } from "./data/persistedCases";
 import { teamData } from "./data/team";
-import { neon } from "@neondatabase/serverless";
-import { drizzle } from "drizzle-orm/neon-http";
+import postgres from "postgres";
+import { drizzle } from "drizzle-orm/postgres-js";
 import { eq, like, and, or, desc } from "drizzle-orm";
 
 export interface IStorage {
@@ -78,7 +78,7 @@ export class PostgreSQLStorage implements IStorage {
     if (!process.env.DATABASE_URL) {
       throw new Error("DATABASE_URL environment variable is required for PostgreSQL storage");
     }
-    const sql = neon(process.env.DATABASE_URL);
+    const sql = postgres(process.env.DATABASE_URL);
     this.db = drizzle(sql);
   }
 
