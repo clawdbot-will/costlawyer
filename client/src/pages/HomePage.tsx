@@ -7,6 +7,7 @@ import NewsSection from "@/components/home/NewsSection";
 import ContactSection from "@/components/home/ContactSection";
 import EmailSubscription from "@/components/home/EmailSubscription";
 import { SEO } from "@/components/seo/SEO";
+import { SchemaJSON } from "@/components/seo/SchemaJSON";
 
 const HomePage = () => {
   // Using SEO component to handle metadata instead of manually setting document.title
@@ -20,6 +21,7 @@ const HomePage = () => {
         type="website"
         canonical="/"
       />
+      <SchemaJSON />
       <HeroSection />
       <WhyUsSection />
       <ServicesSection />
