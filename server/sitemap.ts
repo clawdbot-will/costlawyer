@@ -15,7 +15,7 @@ export async function generateSitemap(req: Request, res: Response, storage: ISto
       storage.getTeamMembers()
     ]);
 
-    const hostname = process.env.SITE_URL || `${req.protocol}://${req.get('host')}`;
+    const hostname = process.env.SITE_URL || 'https://costlawyer.co.uk';
     
     // Create a sitemap stream
     const smStream = new SitemapStream({ hostname });

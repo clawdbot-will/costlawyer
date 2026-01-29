@@ -25,7 +25,11 @@ export function SEO({
   image = defaultImage,
   noIndex = false,
 }: SEOProps) {
-  const fullTitle = title ? `${title} | Mackenzie Costs` : siteName;
+  const fullTitle = !title 
+    ? siteName 
+    : title.includes("Mackenzie Costs") 
+      ? title 
+      : `${title} | Mackenzie Costs`;
   const canonicalUrl = canonical ? `${siteUrl}${canonical}` : undefined;
   const fullImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
 
