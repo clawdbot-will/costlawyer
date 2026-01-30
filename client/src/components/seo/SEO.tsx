@@ -14,7 +14,8 @@ const siteName = "Mackenzie Costs | Legal Costs Specialist";
 const defaultDescription = "Professional legal costs specialists providing expert advice and services in costs management, detailed assessment, and bill preparation.";
 const defaultKeywords = ["legal costs", "costs management", "detailed assessment", "bill preparation", "legal costs specialist"];
 const defaultImage = "/images/logo.png";
-const siteUrl = typeof window !== "undefined" ? window.location.origin : "";
+// Always use the canonical HTTPS non-www URL for SEO consistency
+const siteUrl = "https://costlawyer.co.uk";
 
 export function SEO({
   title,

@@ -492,6 +492,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     generateSitemap(req, res, storage);
   });
 
+  // robots.txt for search engines
+  app.get("/robots.txt", (req, res) => {
+    const robotsTxt = `User-agent: *
+Allow: /
+
+Sitemap: https://costlawyer.co.uk/sitemap.xml
+`;
+    res.header('Content-Type', 'text/plain');
+    res.send(robotsTxt);
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

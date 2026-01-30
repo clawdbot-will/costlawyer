@@ -15,7 +15,10 @@ export async function generateSitemap(req: Request, res: Response, storage: ISto
       storage.getTeamMembers()
     ]);
 
-    const hostname = process.env.SITE_URL || 'https://costlawyer.co.uk';
+    // Always use https and non-www canonical URL
+    let hostname = process.env.SITE_URL || 'https://costlawyer.co.uk';
+    // Force https if http was set
+    hostname = hostname.replace(/^http:\/\//, 'https://');
     
     // Create a sitemap stream
     const smStream = new SitemapStream({ hostname });

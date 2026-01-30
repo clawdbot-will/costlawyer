@@ -7,7 +7,8 @@ interface CaseLawSEOProps {
 
 export function CaseLawSEO({ caseData }: CaseLawSEOProps) {
   const { title, summary, slug, category, date, tags = [] } = caseData;
-  const siteUrl = typeof window !== "undefined" ? window.location.origin : "";
+  // Always use the canonical HTTPS non-www URL for SEO consistency
+  const siteUrl = "https://costlawyer.co.uk";
   const canonicalUrl = `${siteUrl}/cases/${slug}`;
   const keywords = [...tags, "case law", "legal costs", category].filter(Boolean);
   const formattedDate = new Date(date).toISOString();

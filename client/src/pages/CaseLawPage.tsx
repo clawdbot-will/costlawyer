@@ -177,6 +177,7 @@ const CaseLawPage = () => {
         description="Access our comprehensive collection of costs law cases and precedents. Browse through detailed case analyses, summaries and expert commentary."
         keywords={["legal costs", "cost budgeting", "case law", "QOCS", "detailed assessment"]}
         type="website"
+        canonical="/cases"
       />
       <div className="container mx-auto px-4">
         <motion.div 
